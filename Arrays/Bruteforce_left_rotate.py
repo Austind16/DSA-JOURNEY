@@ -8,14 +8,11 @@ def left_rotate_better(k: int, arr: list[int]) -> list[int]:
     n = len(arr)
     k = k % n
 
-    # Step 1: Store first K elements in temp
     temp = arr[:k]
 
-    # Step 2: Shift remaining (N - K) elements to the left
     for i in range(0, n - k):
         arr[i] = arr[i + k]
 
-    # Step 3: Copy temp elements back to the end
     for i in range(0, len(temp)):
         arr[n - k + i] = temp[i]
 
