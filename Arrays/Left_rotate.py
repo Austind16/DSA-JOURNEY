@@ -1,23 +1,26 @@
 # Left Rotate Array by K Positions (Optimal Reversal Algorithm)
 # Time Complexity: O(N) | Space Complexity: O(1)
-def left_rotate(k, arr: list[int]) -> int:
 
-    if not arr or len(arr) == 0:
-        return
-
-
-    k = k % len(arr)
-
-    reverse(0, k-1, arr)
-    reverse(k, len(arr) - 1, arr)
-    reverse(0, len(arr) - 1, arr)
-
-def reverse(start, end, arr: list[int]) -> int:
+def reverse(start: int, end: int, arr: list[int]) -> list[int]:
     while start < end:
         arr[start], arr[end] = arr[end], arr[start]
-
         start += 1
         end -= 1
+    return arr
+
+
+def left_rotate(k: int, arr: list[int]) -> list[int]:
+    if not arr:
+        return arr
+
+    n = len(arr)
+    k = k % n
+
+    reverse(0, k - 1, arr)
+    reverse(k, n - 1, arr)
+    reverse(0, n - 1, arr)
+
+    return arr
 
 
 def main():
@@ -25,9 +28,10 @@ def main():
 
     k = int(input("Enter number of swap: "))
 
-    left_rotate(k, arr)
+    solved_arr = left_rotate(k, arr)
 
-    print(arr)
+    print(solved_arr)
+
 
 if __name__ == "__main__":
     main()
