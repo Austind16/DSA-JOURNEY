@@ -1,3 +1,6 @@
+# Problem: Quick Sort (Divide & Conquer / Partitioning Algorithm)
+# Time Complexity: O(N log N) Average Case | O(N^2) Worst Case (when sorted/reverse sorted)
+# Space Complexity: O(log N) — Auxiliary space used by the recursive call stack.
 def partition(low, high, arr: list[int]) -> int:
     pivot = arr[low]
     i = low
