@@ -5,8 +5,7 @@ def majority(arr: list[int]) -> int:
     n = len(arr)
     hashi = {}
     for num in arr:
-        if num in hashi:
-            hashi[num] = hashi.get(num, 0) + 1
+        hashi[num] = hashi.get(num, 0) + 1
 
     for num, count in hashi.items():
         if count > n // 2:
