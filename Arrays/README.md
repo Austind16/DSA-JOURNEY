@@ -14,6 +14,10 @@ force solution to a clean, efficient implementation.
 
 ## 🧭 Master Problem Table
 
+This is a curated quick-reference table for the currently documented
+optimized solutions. It includes the eight problems listed below; the complete
+folder navigation is available in the topic directory that follows.
+
 | # | Problem Name | Platform / Equivalent | Core Pattern / Technique | Time Complexity | Space Complexity | File Link |
 |---:|---|---|---|---:|---:|---|
 | 1 | 3Sum Closest | LeetCode #16 | Sorting + Two Pointers | `O(N²)` | `O(1)` | [ThreeSum_II.py](./16_Three_Sum/ThreeSum_II.py) |
@@ -93,6 +97,16 @@ easy to execute and inspect independently.
 | [`12_Matrix_Problems`](./12_Matrix_Problems) | Matrix transformations |
 | [`13_Array_Leaders`](./13_Array_Leaders) | Leaders in an array |
 | [`14_Unique_Elements`](./14_Unique_Elements) | Unique-element approaches |
+| [`15_Pascal's_Triangle`](./15_Pascal's_Triangle) | Pascal's Triangle |
+| [`16_Three_Sum`](./16_Three_Sum) | 3Sum and 3Sum Closest |
+| [`17_Four_sum`](./17_Four_sum) | 4Sum |
+| [`18_Merge_Intervals`](./18_Merge_Intervals) | Merge overlapping intervals |
+| [`19_Merge_Sorted_Array`](./19_Merge_Sorted_Array) | In-place merge of sorted arrays |
+| [`20_Missing_and_Repeating`](./20_Missing_and_Repeating) | Missing and repeating values |
+| [`21_Count_Inversions`](./21_Count_Inversions) | Inversion counting |
+| [`22_Reverse_pairs`](./22_Reverse_pairs) | Reverse-pair counting |
+| [`23_Maximum_Product_Array`](./23_Maximum_Product_Array) | Maximum product subarray |
+| [`Stocks`](./Stocks) | Buy and sell stock |
 
 ---
 
